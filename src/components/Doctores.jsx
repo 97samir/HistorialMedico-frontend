@@ -1,29 +1,29 @@
-import '../css/Doctores.css'
+import '../css/Doctores.css';
 
 const doctores = [
   {
     nombre: 'Walter White',
     puesto: 'Médico Internista',
     descripcion: 'Amplio conocimiento de enfermedades comunes.',
-    imagen: '/public/assets/img/doctores/doctors-1.jpg',
+    claseImagen: 'doctor-1',
   },
   {
     nombre: 'Sarah Jhonson',
     puesto: 'Médico Familiar',
     descripcion: 'Enfocado en el historial y atención continua.',
-    imagen: '/public/assets/img/doctores/doctors-2.jpg',
+    claseImagen: 'doctor-2',
   },
   {
     nombre: 'William Anderson',
     puesto: 'Médico General',
     descripcion: 'Puede revisar solicitudes básicas.',
-    imagen: '/public/assets/img/doctores/doctors-3.jpg',
+    claseImagen: 'doctor-3',
   },
   {
     nombre: 'Amanda Jepson',
     puesto: 'Médico Legal',
     descripcion: 'Validación formal de documentos.',
-    imagen: '/public//assets/img/doctores/doctors-4.jpg',
+    claseImagen: 'doctor-4',
   },
 ];
 
@@ -32,7 +32,7 @@ function Doctores() {
     <section id="doctors" className="doctors section light-background py-5">
       <div className="container section-title text-center mb-5" data-aos="fade-up">
         <h2>Doctores</h2>
-        <p>Contamos con doctores especializados que te ayudaran a seguir proceso.</p>
+        <p>Contamos con doctores especializados que te ayudarán a seguir el proceso.</p>
       </div>
 
       <div className="container">
@@ -45,8 +45,7 @@ function Doctores() {
               data-aos-delay={(index + 1) * 100}
             >
               <div className="team-member w-100">
-                <div className="member-img position-relative">
-                  <img src={doc.imagen} className="img-fluid w-100 rounded-top" alt={doc.nombre} />
+                <div className={`member-img position-relative ${doc.claseImagen}`}>
                   <div className="social position-absolute start-50 translate-middle-x">
                     <a href="#"><i className="bi bi-twitter-x"></i></a>
                     <a href="#"><i className="bi bi-facebook"></i></a>

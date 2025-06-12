@@ -1,5 +1,5 @@
 import '../css/Header.css';
-import logo from '../../public/assets/img/logo.jpg';
+// import logo from '../../public/assets/img/logo.jpg';
 import { useEffect } from 'react';
 
 //react router
@@ -37,7 +37,7 @@ function Header() {
       <div className="branding py-3">
         <div className="container d-flex align-items-center justify-content-between position-relative">
           <a href="/home" className="logo d-flex align-items-center me-auto d-block d-lg-none d-xl-flex">
-            <img src={logo} alt="Logo Medicio" />
+            {/* <img src={logo} alt="Logo Medicio" /> */}
           </a>
 
           <nav id="navmenu" className="navmenu">

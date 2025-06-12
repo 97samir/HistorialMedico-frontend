@@ -4,6 +4,17 @@
   z-index: 997;
 }
 
+.logo {
+  display: inline-block;
+  width: 120px;
+  height: 40px;
+  background-image: url('../assets/img/logo.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
 .topbar {
   background-color: #3fbbc0;
   font-size: 0.9rem;

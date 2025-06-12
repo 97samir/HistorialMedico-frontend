@@ -1,12 +1,12 @@
-import React from 'react'
-import '../css/MiHistorial.css'
+import React from 'react';
+import '../css/MiHistorial.css';
 
 const historialMedico = [
   {
     fecha: '2025-04-20',
     diagnostico: 'Gripe común',
     medico: 'Dra. María López',
-    foto: '/public/assets/img/doctores/doctors-2.jpg',
+    claseFoto: 'foto-doctor-2',
     archivos: [
       { nombre: 'Informe.pdf', url: '/documentos/informe-gripe.pdf' },
       { nombre: 'Receta.jpg', url: '/documentos/receta-gripe.jpg' }
@@ -16,33 +16,33 @@ const historialMedico = [
     fecha: '2025-02-10',
     diagnostico: 'Chequeo general',
     medico: 'Dr. Juan Pérez',
-    foto: '/public/assets/img/doctores/doctors-1.jpg',
+    claseFoto: 'foto-doctor-1',
     archivos: [
-        { nombre: 'Examen.pdf', url: '/documentos/chequeo.pdf' },
-        { nombre: 'Vista.jpg', url: '/documentos/receta-gripe.jpg' }
+      { nombre: 'Examen.pdf', url: '/documentos/chequeo.pdf' },
+      { nombre: 'Vista.jpg', url: '/documentos/receta-gripe.jpg' }
     ]
   },
   {
     fecha: '2025-02-10',
     diagnostico: 'Chequeo general',
     medico: 'Dr. Juan Pérez',
-    foto: '/public/assets/img/doctores/doctors-4.jpg',
+    claseFoto: 'foto-doctor-4',
     archivos: [
-        { nombre: 'Examen.pdf', url: '/documentos/chequeo.pdf' },
-        { nombre: 'Vista.jpg', url: '/documentos/receta-gripe.jpg' }
+      { nombre: 'Examen.pdf', url: '/documentos/chequeo.pdf' },
+      { nombre: 'Vista.jpg', url: '/documentos/receta-gripe.jpg' }
     ]
   },
   {
     fecha: '2025-02-10',
     diagnostico: 'Chequeo general',
     medico: 'Dr. Juan Pérez',
-    foto: '/public/assets/img/doctores/doctors-3.jpg',
+    claseFoto: 'foto-doctor-3',
     archivos: [
-        { nombre: 'Examen.pdf', url: '/documentos/chequeo.pdf' },
-        { nombre: 'Vista.jpg', url: '/documentos/receta-gripe.jpg' }
+      { nombre: 'Examen.pdf', url: '/documentos/chequeo.pdf' },
+      { nombre: 'Vista.jpg', url: '/documentos/receta-gripe.jpg' }
     ]
   }
-]
+];
 
 function MiHistorial() {
   return (
@@ -59,11 +59,7 @@ function MiHistorial() {
               <div className="historial-item card shadow-sm">
                 <div className="card-body">
                   <div className="doctor-img-container">
-                    <img
-                      src={registro.foto}
-                      alt={registro.medico}
-                      className="doctor-img"
-                    />
+                    <div className={`doctor-img ${registro.claseFoto}`} title={registro.medico}></div>
                   </div>
                   <div className="historial-content">
                     <h5 className="card-title">{registro.fecha}</h5>
@@ -93,7 +89,7 @@ function MiHistorial() {
         </div>
       </div>
     </section>
-  )
+  );
 }
 
-export default MiHistorial
+export default MiHistorial;
