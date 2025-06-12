@@ -32,7 +32,7 @@ function Perfil() {
           <div className="col-lg-4 text-center mb-4 mb-lg-0">
             <div className="foto-perfil">
               <img
-                src={fotoPerfil || '/public/assets/img/perfil.jpg'}
+                src={fotoPerfil || '../../public/assets/img/perfil.jpg'}
                 alt="Foto de perfil"
                 className="img-thumbnail"
               />
