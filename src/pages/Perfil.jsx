@@ -29,18 +29,18 @@ function Perfil() {
     <section id='perfil' className="perfil-section d-flex align-items-center">
       <div className="container">
         <div className="perfil-card shadow rounded row gx-5 p-4">
+          
+          {/* Imagen y controles de foto */}
           <div className="col-lg-4 text-center mb-4 mb-lg-0">
-            <div className="foto-perfil">
-              <img
-                src={fotoPerfil || '../../public/assets/img/perfil.jpg'}
-                alt="Foto de perfil"
-                className="img-thumbnail"
-              />
-              <div>
-                <label className="form-label mt-2">Cambiar foto</label>
-              </div>
-              
-              
+            <div
+              className="foto-perfil"
+              style={{
+                backgroundImage: `url(${fotoPerfil || '/assets/img/perfil.jpg'})`
+              }}
+            ></div>
+
+            <div className="mt-3">
+              <label className="form-label">Cambiar foto</label>
               <input
                 type="file"
                 className="form-control form-control-sm"
@@ -48,6 +48,8 @@ function Perfil() {
               />
             </div>
           </div>
+
+          {/* Información del perfil */}
           <div className="col-lg-8">
             <h3 className="mb-4 text-center text-lg-start">Mi Perfil</h3>
             <div className="row mb-2">
@@ -79,6 +81,7 @@ function Perfil() {
               </button>
             </div>
           </div>
+
         </div>
       </div>
     </section>
