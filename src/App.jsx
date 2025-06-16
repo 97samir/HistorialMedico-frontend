@@ -1,15 +1,11 @@
-import './App.css'
-// import FeaturedServices from './components/FeaturedServices';
-// import Carrusel from './components/Carrusel';
-// import Contacto from './components/Contacto';
-// import SolicitarHistorial from './components/SolicitarHistorial';
-// import ConsultaEstado from './components/ConsultaEstado';
-// import MiHistorial from './components/MiHistorial';
-// import Doctores from './components/Doctores';
+//import './App.css'
 
 // layouts
 import MainLayout from './layouts/MainLayout';
 import AuthLayout from './layouts/AuthLayout';
+
+// Scroll al ID (hash)
+import ScrollToHashElement from './components/ScrollToHashElement';
 
 // react-router
 import { Routes, Route, Navigate } from 'react-router-dom'
@@ -20,47 +16,32 @@ import Home from './pages/Home';
 
 function App() {
   return (
-    <Routes>
+    <>
+      <ScrollToHashElement />
 
-      {/* Redirección del inicio "/" hacia la ruta deseada */}
-      <Route path="/" element={<Navigate to="/login" replace />} />
+      <Routes>
 
-      {/* Layout principal con Header y Footer */}
-      <Route element={<MainLayout />}>
+        {/* Redirección del inicio "/" hacia la ruta deseada */}
+        <Route path="/" element={<Navigate to="/login" replace />} />
 
-        <Route path="/home" element={<Home />} />
-        
-        {/* <Route
-          path="/"
-          element={
-            <>
-              <Carrusel />
-              <Doctores />
-              <FeaturedServices />
-              <SolicitarHistorial />
-              <ConsultaEstado />
-              <MiHistorial />
-              <Contacto />
-              <Perfil />
-            </>
-          }
-        /> */}
+        {/* Layout principal con Header y Footer */}
+        <Route element={<MainLayout />}>
 
-        {/* <Route path="/solicitar" element={<SolicitarHistorial />} />
-        <Route path="/consulta-estado" element={<ConsultaEstado />} />
-        <Route path="/mi-historial" element={<MiHistorial />} />
-        <Route path="/contacto" element={<Contacto />} />
-        <Route path="/perfil" element={<Perfil />} /> */}
-      </Route>
+          <Route path="/home" element={<Home />} />
+          <Route path="/perfil" element={<Perfil />} />
+          
+        </Route>
 
-      {/* Layout para login sin Header/Footer */}
-      <Route element={<AuthLayout />}>
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
-        
-      </Route>
+        {/* Layout para login sin Header/Footer */}
+        <Route element={<AuthLayout />}>
 
-    </Routes>
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          
+        </Route>
+
+      </Routes>
+    </>
   );
 }
 

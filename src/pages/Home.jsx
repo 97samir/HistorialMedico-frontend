@@ -5,7 +5,7 @@ import ConsultaEstado from '../components/ConsultaEstado';
 import MiHistorial from '../components/MiHistorial';
 import Contacto from '../components/Contacto';
 
-import Perfil from './Perfil'
+
 
 function Home() {
   return (
@@ -34,9 +34,7 @@ function Home() {
       <section id="contacto">
         <Contacto />
       </section>
-      <section id="perfil">
-        <Perfil />
-      </section>
+
     </>
   );
 }

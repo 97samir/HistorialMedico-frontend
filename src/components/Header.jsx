@@ -42,20 +42,20 @@ function Header() {
 
           <nav id="navmenu" className="navmenu">
             <ul>
-              <li><a href="#carrusel" className="active">Inicio</a></li>
-              {/* <li><Link to="/carrusel" className="active">Inicio</Link></li> */}
+              {/* <li><a href="#carrusel" className="active">Inicio</a></li> */}
+              <li><Link to="/home#carrusel" className="active">Inicio</Link></li>
               
-              <li><a href="#solicitar">Solicitar Historial Médico</a></li>
-              {/* <li><Link to="/solicitar">Solicitar Historial Médico</Link></li> */}
+              {/* <li><a href="#solicitar">Solicitar Historial Médico</a></li> */}
+              <li><Link to="/home#solicitar">Solicitar Historial Médico</Link></li>
               
-              <li><a href="#consulta-estado">Consultar Estado de Solicitudes</a></li>
-              {/* <li><Link to="/consulta-estado">Consultar Estado de Solicitudes</Link></li> */}
+              {/* <li><a href="#consulta-estado">Consultar Estado de Solicitudes</a></li> */}
+              <li><Link to="/home#consulta-estado">Consultar Estado de Solicitudes</Link></li>
 
-              <li><a href="#mi-historial">Mi Historial</a></li>
-              {/* <li><Link to="/mi-historial">Mi Historial</Link></li> */}
+              {/* <li><a href="#mi-historial">Mi Historial</a></li> */}
+              <li><Link to="/home#mi-historial">Mi Historial</Link></li>
 
-              <li><a href="#contact">Contacto</a></li>
-              {/* <li><Link to="/contacto">Contacto</Link></li> */}
+              {/* <li><a href="#contact">Contacto</a></li> */}
+              <li><Link to="/home#contacto">Contacto</Link></li>
 
             </ul>
           </nav>
@@ -65,8 +65,8 @@ function Header() {
             aria-label="Abrir menú"
             style={{ cursor: 'pointer', fontSize: '24px' }}
           ></i>
-          <a href='#perfil' className="cta-btn ms-3">Ver perfil</a>
-          {/* <Link to="#perfil" className="cta-btn ms-3">Ver perfil</Link> */}
+          {/* <a href='#perfil' className="cta-btn ms-3">Ver perfil</a> */}
+          <Link to="/perfil" className="cta-btn ms-3">Ver perfil</Link>
 
         </div>
       </div>
