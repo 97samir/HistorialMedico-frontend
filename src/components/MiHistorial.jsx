@@ -1,12 +1,15 @@
-import React from 'react'
 import '../css/MiHistorial.css'
+import img1 from '../assets/img/doctores/doctors-1.jpg'
+import img2 from '../assets/img/doctores/doctors-2.jpg'
+import img3 from '../assets/img/doctores/doctors-3.jpg'
+import img4 from '../assets/img/doctores/doctors-4.jpg'
 
 const historialMedico = [
   {
     fecha: '2025-04-20',
     diagnostico: 'Gripe común',
     medico: 'Dra. María López',
-    foto: '/public/assets/img/doctores/doctors-2.jpg',
+    foto: img2,
     archivos: [
       { nombre: 'Informe.pdf', url: '/documentos/informe-gripe.pdf' },
       { nombre: 'Receta.jpg', url: '/documentos/receta-gripe.jpg' }
@@ -16,7 +19,7 @@ const historialMedico = [
     fecha: '2025-02-10',
     diagnostico: 'Chequeo general',
     medico: 'Dr. Juan Pérez',
-    foto: '/public/assets/img/doctores/doctors-1.jpg',
+    foto: img1,
     archivos: [
         { nombre: 'Examen.pdf', url: '/documentos/chequeo.pdf' },
         { nombre: 'Vista.jpg', url: '/documentos/receta-gripe.jpg' }
@@ -26,7 +29,7 @@ const historialMedico = [
     fecha: '2025-02-10',
     diagnostico: 'Chequeo general',
     medico: 'Dr. Juan Pérez',
-    foto: '/public/assets/img/doctores/doctors-4.jpg',
+    foto: img4,
     archivos: [
         { nombre: 'Examen.pdf', url: '/documentos/chequeo.pdf' },
         { nombre: 'Vista.jpg', url: '/documentos/receta-gripe.jpg' }
@@ -36,7 +39,7 @@ const historialMedico = [
     fecha: '2025-02-10',
     diagnostico: 'Chequeo general',
     medico: 'Dr. Juan Pérez',
-    foto: '/public/assets/img/doctores/doctors-3.jpg',
+    foto: img3,
     archivos: [
         { nombre: 'Examen.pdf', url: '/documentos/chequeo.pdf' },
         { nombre: 'Vista.jpg', url: '/documentos/receta-gripe.jpg' }

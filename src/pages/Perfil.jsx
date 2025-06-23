@@ -1,6 +1,7 @@
 import '../css/Perfil.css';
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
+import perfil from '../assets/img/perfil.jpg'
 
 function Perfil() {
   const navigate = useNavigate();
@@ -32,7 +33,7 @@ function Perfil() {
           <div className="col-lg-4 text-center mb-4 mb-lg-0">
             <div className="foto-perfil">
               <img
-                src={fotoPerfil || '/public/assets/img/perfil.jpg'}
+                src={fotoPerfil || perfil}
                 alt="Foto de perfil"
                 className="img-thumbnail"
               />

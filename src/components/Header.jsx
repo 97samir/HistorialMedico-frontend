@@ -1,5 +1,5 @@
 import '../css/Header.css';
-import logo from '../../public/assets/img/logo.jpg';
+import logo from '../assets/img/logo.jpg';
 import { useEffect } from 'react';
 
 //react router

@@ -1,7 +1,7 @@
 import '../css/Carrusel.css'
-import img1 from '../../public/assets/img/carrusel/hero-carousel-1.jpg'
-import img2 from '../../public/assets/img/carrusel/hero-carousel-2.jpg'
-import img3 from '../../public/assets/img/carrusel/hero-carousel-3.jpg'
+import img1 from '../assets/img/carrusel/hero-carousel-1.jpg'
+import img2 from '../assets/img/carrusel/hero-carousel-2.jpg'
+import img3 from '../assets/img/carrusel/hero-carousel-3.jpg'
 
 
 function Carrusel() {

@@ -1,4 +1,5 @@
 import '../css/Footer.css'
+import logo from '../assets/img/logo.jpg';
 
 const Footer = () => {
   return (
@@ -6,8 +7,10 @@ const Footer = () => {
       <div className="container footer-top">
         <div className="row gy-4">
           <div className="col-lg-4 col-md-6 footer-about">
-            <a href="/" className="logo d-flex align-items-center">
-              <span className="sitename">Medicio</span>
+            <a href="/home" className="logo d-flex align-items-center">
+              {/* <span className="sitename">Medicio</span> */}
+              <img src={logo} alt="Logo Medicio" />
+
             </a>
             <div className="footer-contact pt-3">
               <p>Av. Santiago de Surco N° 4717, </p>
